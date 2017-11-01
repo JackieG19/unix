@@ -1,0 +1,93 @@
+    1  ls
+    2  ls -a
+    3  mkdir unixstuff
+    4  ls
+    5  cd unixstuff
+    6  ls -a
+    7  mkdir backups
+    8  pwd
+    9  ls unixstuff
+   10  ls backups
+   11  ls unixstuff/backups
+   12  ls ~/unixstuff
+   13  ls ~
+   14  ls ~/..
+   15  cp science.txt science.bak
+   16  mkdir tempstuff
+   17  rmdir tempstuff
+   18  mkdir tempstuff
+   19  ls
+   20  rmdir tempstuff
+   21  ls
+   22  cat science.txt
+   23  less science.txt
+   24  head science.txt
+   25  head -5 science.txt
+   26  tail science.txt
+   27  less science.txt /science
+   28  grep science science.txt
+   29  grep Science science.txt
+   30  grep -i science science.txt
+   31  grep -i 'spinning top' science.txt
+   32  grep -ivc science science.txt
+   33  wc -w science.txt
+   34  wc -l science.txt
+   35  cat > list2
+   36  cat list2
+   37  cat >> list1
+   38  cat list2
+   39  cat list2
+   40  cat list1
+   41  cat list1 list2 > biglist
+   42  cat biglist
+   43  sort
+   44  sort < biglist
+   45  sort < biglist > slist
+   46  who
+   47  cat list1 list2 | grep p | sort
+   48  ls list*
+   49  ls *list
+   50  ls ?list
+   51  man wc
+   52  whatis wc
+   53  apropos keyword
+   54  apropos copy
+   55  ls -l
+   56  chmod go-rwx biglist
+   57  chmod a+rw biglist
+   58  chmod go-rwx science.txt
+   59  chmod a+rw science.txt
+   60  ls -l
+   61  ps
+   62  sleep 10
+   63  sleep 10 &
+   64  sleep 1000
+   65  bg
+   66  jobs
+   67  fg %jobnumber
+   68  fg
+   69  fg %1
+   70  sleep 100
+   71  kill %jobnumber
+   72  sleep 100 &
+   73  jobs
+   74  kill %4
+   75  kill
+   76  sleep 1000 &
+   77  ps
+   78  kill 11940
+   79  cd unixstuff/
+   80  quota -v
+   81  df .
+   82  du -s *
+   83  ls -l science.txt
+   84  gzip science.txt
+   85  gunzip science.txt.gz
+   86  ls -l
+   87  zcat science.txt.gz
+   88  zcat science.txt.gz | less
+   89  file *
+   90  diff file1 file2
+   91  find . -name "*.txt" -print
+   92  find . -size +1M -ls
+   93  history
